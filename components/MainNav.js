@@ -13,7 +13,7 @@ const MainNav = () => {
             <Nav.Link className={styles.textColor} href="/aboutme">
               About
             </Nav.Link>
-            <Nav.Link className={styles.textColor} href="/experiences">
+            <Nav.Link className={styles.textColor} href="/experience">
               Experience{" "}
             </Nav.Link>
             <Nav.Link className={styles.textColor} href="/contact">

@@ -153,41 +153,6 @@ export default function Home() {
   >Send</button>
   </form>
 </div>
-
-      {/* <form ref={form} onSubmit={sendEmail}>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", width: "25rem" }}>
-  <span>Name:</span>
-  <input
-    style={{ width: "100%", height: "30px" }}
-    type="text"
-    name="name"
-    placeholder="Name"
-    required
-  />
-
-  <span>Email:</span>
-  <input
-    style={{ width: "100%", height: "30px" }}
-    type="email"
-    name="email"
-    placeholder="Email"
-    required
-  />
-
-  <span>Message:</span>
-  <textarea
-    style={{ width: "100%", height: "15rem", resize: "none" }}
-    name="message"
-    placeholder="Message"
-    required
-  />
-</div>
-
-      <br></br>
-        <br></br>
-      <button 
-  >Send</button>
-    </form> */}
     </Card>
     </div>
 
