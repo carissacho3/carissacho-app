@@ -8,15 +8,15 @@ const MainNav = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Carissa Cho</Navbar.Brand>
+          <Navbar.Brand href="/">Carissa Cho</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link className={styles.textColor} href="#home">
+            <Nav.Link className={styles.textColor} href="/aboutme">
               About
             </Nav.Link>
-            <Nav.Link className={styles.textColor} href="#features">
+            <Nav.Link className={styles.textColor} href="/experiences">
               Experience{" "}
             </Nav.Link>
-            <Nav.Link className={styles.textColor} href="#pricing">
+            <Nav.Link className={styles.textColor} href="/contact">
               Contact
             </Nav.Link>
           </Nav>

@@ -9,20 +9,6 @@ import { useRef, useState } from "react";
 export default function Home() {
 
   const form = useRef();
-  const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
-
-  const buttonStyle = {
-    backgroundColor: isClicked ? "#a9cfff" : isHovered ? "#7faefc" : "transparent",
-    color: isHovered || isClicked ? "white" : "#428af5",
-    border: "2px solid #428af5",
-    padding: "0.5rem 1rem",
-    borderRadius: "4px",
-    cursor: "pointer",
-    width: "10rem",
-    marginBottom: "1rem",
-    transition: "background-color 0.3s, color 0.3s",
-  };
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -44,66 +30,33 @@ export default function Home() {
 
   return (
     <>
-     
-
       <div
-        style={{
-          backgroundImage: `url(${coding.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "85vh",
-          width: "98.8vw",
-          margin: 0,
-          padding: 0,
-          position: "absolute",
-          top: 56,
-          left: 0,
-        }}
+       className={styles.cover}
       >
+        <div></div>
         <h1
-          style={{
-            textAlign: "center",
-            color: "#428af5",
-            fontFamily: "Cascadia Code",
-            marginTop: "11rem",
-            fontWeight: "bolder",
-          }}
+          className={styles.myname}
         >
           Hi my Name is,{" "}
         </h1>
         <h1
-          style={{
-            fontFamily: "Rowdies",
-            textAlign: "center",
-            color: "#FFFFFF",
-          }}
+         className= {styles.carissa}
         >
           Carissa Cho
         </h1>
         <hr
-          style={{
-            border: "none",
-            height: "2px",
-            backgroundColor: "	#E5E4E2",
-            opacity: 1,
-            width: "40%",
-            margin: "20px auto",
-          }}
+         className={styles.hr}
         />
       </div>
 
-      <div
-        style={{ marginTop: "27.8rem", width: "98.9vw", marginLeft: "-4.7rem" }}
+      <div 
+        className= {styles.positioncard}
       >
         <Card
-          style={{
-            backgroundColor: "rgb(247, 243, 234)",
-            textAlign: "center",
-            fontFamily: "Cascadia Code",
-          }}
+          className={styles.stylecard}
         >
           <Card.Body>
-            <Card.Title style={{ marginTop: "3rem" }}>
+            <Card.Title className={styles.stylecardtitle}>
               {" "}
               <h1>About Me</h1>
             </Card.Title>
@@ -115,21 +68,21 @@ export default function Home() {
               problem-solving ability, and leadership, particularly in public
               sector environments.
             </Card.Text>
-            <Link href={"/"}>Read More</Link>
+            <Link href={"/aboutme"}>Read More</Link>
           </Card.Body>
         </Card>
       </div>
 
-      <div style={{ marginTop: "3rem", fontFamily: "Cascadia Code" }}>
-        <h1 style={{ textAlign: "center" }}>Experience</h1>
-        <p style={{ fontWeight: "bold" }}>
+      <div className={styles.positionhero}>
+        <h1 className={styles.theheader}>Experience</h1>
+        <p className={styles.position}>
           Low Code Application Developer (Co-Op)/Part-time,{" "}
-          <span style={{ color: "#428af5" }}>
+          <span className={styles.workplace}>
             Ministry of Public and Business Service Delivery and Procurement
           </span>
         </p>
         <p> January 2, 2024- May 2, 2025 </p>
-        <ol style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+        <ol className={styles.ol}>
           <li>
             Spearheaded the development of custom applications using Power
             Automate, Dataverse, Power Apps,C#, React, Java, that directly
@@ -157,43 +110,84 @@ export default function Home() {
           </li>
         </ol>
 
-        <div style={{ textAlign: "center" }}>
-          <Link href={"/"}>Read More</Link>
+        <div className={styles.theheader}>
+          <Link href={"/experiences"}>Read More</Link>
         </div>
       </div>
 
-      <div style={{ marginTop: "2rem", width: "98.9vw", marginLeft: "-4.7rem" }}> 
-<Card   style={{
-            backgroundColor: "rgb(247, 243, 234)",
-            textAlign: "center",
-            fontFamily: "Cascadia Code",
-          }}>
+      <div className={styles.positioncardtwo} > 
+<Card className={styles.stylecard}>
 
-<Card.Title style={{ marginTop: "3rem" }}> <h1>{"Let's Chat!"}</h1></Card.Title>
+<Card.Title className={styles.stylecardtitle}> <h1>{"Let's Chat!"}</h1></Card.Title>
 
-      <form ref={form} onSubmit={sendEmail}>
-      <span>Name:</span> <br></br>
-      <input style={{width: "25rem",  height: "30px"}} type="text" name="name" placeholder="Name" required />
-      <br></br>
-      
-      <span>Email:</span> <br></br>
-      <input style={{width: "25rem",  height: "30px"}} type="email" name="email" placeholder="Email" required />
-      <br></br>
-      
-      <span>Message:</span> <br></br>
-      <textarea style={{width: "25rem",  height: "15rem", resize: "none" }} name="message" placeholder="Message" required />
+<div className={styles.contact}>
+  <form ref={form} onSubmit={sendEmail} className={styles.form}>
+    <span>Name:</span>
+    <input
+      className={styles.input}
+      type="text"
+      name="name"
+      placeholder="Name"
+      required
+    />
+
+    <span>Email:</span>
+    <input
+        className={styles.input}
+      type="email"
+      name="email"
+      placeholder="Email"
+      required
+    />
+
+    <span>Message:</span>
+    <textarea
+     className={styles.textarea}
+      name="message"
+      placeholder="Message"
+      required
+    />
+
+        <br></br>
+      <button className={styles.button}
+  >Send</button>
+  </form>
+</div>
+
+      {/* <form ref={form} onSubmit={sendEmail}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", width: "25rem" }}>
+  <span>Name:</span>
+  <input
+    style={{ width: "100%", height: "30px" }}
+    type="text"
+    name="name"
+    placeholder="Name"
+    required
+  />
+
+  <span>Email:</span>
+  <input
+    style={{ width: "100%", height: "30px" }}
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+  />
+
+  <span>Message:</span>
+  <textarea
+    style={{ width: "100%", height: "15rem", resize: "none" }}
+    name="message"
+    placeholder="Message"
+    required
+  />
+</div>
+
       <br></br>
         <br></br>
-      <button style={buttonStyle}
-  onMouseEnter={() => setIsHovered(true)}
-  onMouseLeave={() => {
-    setIsHovered(false);
-    setIsClicked(false);
-  }}
-  onMouseDown={() => setIsClicked(true)}
-  onMouseUp={() => setIsClicked(false)}
+      <button 
   >Send</button>
-    </form>
+    </form> */}
     </Card>
     </div>
 

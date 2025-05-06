@@ -1,4 +1,134 @@
-.sendButton
-{
-    
+.cover {
+    background-image: url("../Images/coding.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    width: 98.8vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: -27.8rem;
+    left: 0;
 }
+
+.myname {
+    text-align: center;
+    color: #428af5;
+    font-family: "Cascadia Code";
+    margin-top: 9rem;
+    font-weight: bolder;
+}
+
+.carissa {
+    font-family: "Rowdies";
+    text-align: center;
+    color: #ffffff;
+}
+
+.hr {
+    border: none;
+    height: 2px;
+    background-color: #E5E4E2;
+    opacity: 1;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.positioncard {
+    margin-top: 27.8rem;
+    width: 98.9vw;
+    margin-left: -4.7rem
+}
+
+.stylecard {
+    background-color: rgb(247, 243, 234);
+    text-align: center;
+    font-family: "Cascadia Code";
+}
+
+.stylecardtitle {
+    margin-top: 3rem;
+}
+
+.positionhero {
+    margin-top: 3rem;
+    font-family: "Cascadia Code"
+}
+
+.theheader {
+    text-align: center
+}
+
+.position {
+    font-weight: bold
+}
+
+.workplace {
+    color: #428af5
+}
+
+.ol {
+    list-style-type: disc;
+
+    padding-left: 1.5rem
+}
+
+.positioncardtwo {
+    margin-top: 2rem;
+    width: 98.9vw;
+    margin-left: -4.7rem;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center; 
+    margin-top: 2rem;
+}
+
+.form
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25rem;
+}
+
+.input
+{
+    width: 100%;
+     height: 30px;
+     margin-bottom: 1rem;
+}
+
+.textarea
+{
+    width: 100%; 
+    height: 15rem; 
+    resize: none;
+     margin-bottom: 1rem;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #428af5;
+    background-color: transparent;
+    border: 2px solid #428af5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 3rem;
+    width:8rem;
+  }
+  
+  .button:hover {
+    background-color: #6aa9ff;
+    color: white;
+  }
+  
+  .button:active {
+    background-color: #a9cfff;
+    color: white;
+  }
+  
