@@ -44,12 +44,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Rowdies:wght@300;400;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+     
 
       <div
         style={{
@@ -174,7 +169,7 @@ export default function Home() {
             fontFamily: "Cascadia Code",
           }}>
 
-<Card.Title style={{ marginTop: "3rem" }}> <h1>Let's Chat!</h1></Card.Title>
+<Card.Title style={{ marginTop: "3rem" }}> <h1>{"Let's Chat!"}</h1></Card.Title>
 
       <form ref={form} onSubmit={sendEmail}>
       <span>Name:</span> <br></br>
