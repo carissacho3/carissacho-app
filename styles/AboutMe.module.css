@@ -1,0 +1,45 @@
+.cover {
+    background-image: url("../Images/dev.png");
+    background-size: cover;
+    background-position: center;
+    height: 84vh;
+    width: 98.8vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: -27.8rem;
+    left: 0;
+}
+
+
+.carissa {
+    font-family: "Rowdies";
+    text-align: center;
+    color: #ffffff;
+    margin-top: 11rem;
+    
+}
+
+.hr {
+    border: none;
+    height: 2px;
+    background-color: #E5E4E2;
+    opacity: 1;
+    width: 40%;
+    margin: 20px auto;
+    margin-right: 24.5rem;
+}
+
+.positioncard {
+    margin-top: 27.8rem;
+    width: 98.9vw;
+    margin-left: -4.7rem
+}
+
+.stylecard {
+    background-color: white;
+    text-align: left;
+    font-family: "Cascadia Code";
+    border-color: #ffffff;
+}
+

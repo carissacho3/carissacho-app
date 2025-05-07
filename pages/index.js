@@ -1,10 +1,8 @@
 import styles from "@/styles/Home.module.css";
-import coding from "@/Images/coding.jpg";
-import Head from "next/head";
 import Link from "next/link";
 import { Card } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export default function Home() {
 
@@ -33,7 +31,7 @@ export default function Home() {
       <div
        className={styles.cover}
       >
-        <div></div>
+        
         <h1
           className={styles.myname}
         >
