@@ -19,6 +19,7 @@ export default function Home() {
     ).then(
       (result) => {
         alert("Email sent successfully!");
+        form.current.reset();
       },
       (error) => {
         alert("Failed to send email: " + error.text);

@@ -1,0 +1,30 @@
+.title
+{
+    text-align: center;
+    font-family: "Cascadia Code";
+    margin-top: 3rem;
+}
+
+.position {
+    font-weight: bold
+}
+
+.workplace {
+    color: #428af5
+}
+
+.ol {
+    list-style-type: disc;
+
+    padding-left: 1.5rem
+}
+
+.exp1
+{
+    font-family: "Cascadia Code";
+}
+.exp2
+{
+    margin-top: 3rem;
+    font-family: "Cascadia Code";
+}

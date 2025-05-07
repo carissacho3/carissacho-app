@@ -1,0 +1,82 @@
+.contactbackground {
+    background-image: url('../Images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 2rem;
+    width: 233.3vh;
+    margin-left: -6rem;
+  }
+
+  .title
+{
+    text-align: center;
+    font-family: "Cascadia Code";
+    margin-top: 0rem;
+}
+
+.stylecard {
+  background-color: rgb(247, 243, 234);
+  text-align: center;
+  font-family: "Cascadia Code";
+  border-color: rgb(247, 243, 234);
+  height: 28rem;
+  width: 45rem;
+  margin-left: 14rem;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center; 
+    margin-top: 2rem;
+}
+
+.form
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25rem;
+}
+
+.input
+{
+    width: 100%;
+     height: 30px;
+     margin-bottom: 1rem;
+}
+
+.textarea
+{
+    width: 100%; 
+    height: 10rem; 
+    resize: none;
+     margin-bottom: 1rem;
+}
+
+.button {
+    padding: 5px 20px;
+    font-size: 1rem;
+    color: #428af5;
+    background-color: transparent;
+    border: 2px solid #428af5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 3rem;
+    width:8rem;
+  }
+  
+  .button:hover {
+    background-color: #6aa9ff;
+    color: white;
+  }
+  
+  .button:active {
+    background-color: #a9cfff;
+    color: white;
+  }
