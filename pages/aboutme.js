@@ -45,7 +45,10 @@ const AboutMe = () => {
           </Card.Body>
         </Card>
       </div>
+      <br></br>
     </>
+
+
   );
 };
 
